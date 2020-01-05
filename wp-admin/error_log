@@ -1,0 +1,146 @@
+[26-Dec-2019 18:21:17 UTC] Erro de banco de dados do WordPress Unknown column 'wp_' in 'field list' para a consulta SELECT wp_
+[03-Jan-2020 22:20:20 UTC] PHP Fatal error:  Class Elementor\Widget_My_Custom_Elementor_Thing contains 1 abstract method and must therefore be declared abstract or implement the remaining methods (Elementor\Controls_Stack::get_name) in /home1/bolsad57/public_html/suno/wp-content/plugins/elementor-hello-world-master/widgets/inline-editing.php on line 91
+[03-Jan-2020 23:52:56 UTC] PHP Fatal error:  Uncaught Error: Class 'ElementorHelloWorld\Widgets\Schemes\Color' not found in /home1/bolsad57/public_html/suno/wp-content/plugins/elementor-hello-world-master/widgets/hello-world.php:153
+Stack trace:
+#0 /home1/bolsad57/public_html/suno/wp-content/plugins/elementor/includes/base/controls-stack.php(1880): ElementorHelloWorld\Widgets\Hello_World->_register_controls()
+#1 /home1/bolsad57/public_html/suno/wp-content/plugins/elementor/includes/base/controls-stack.php(488): Elementor\Controls_Stack->init_controls()
+#2 /home1/bolsad57/public_html/suno/wp-content/plugins/elementor/includes/base/widget-base.php(148): Elementor\Controls_Stack->get_stack()
+#3 /home1/bolsad57/public_html/suno/wp-content/plugins/elementor/includes/base/controls-stack.php(281): Elementor\Widget_Base->get_stack()
+#4 /home1/bolsad57/public_html/suno/wp-content/plugins/elementor/includes/base/controls-stack.php(1915): Elementor\Controls_Stack->get_controls()
+#5 /home1/bolsad57/public_html/suno/wp-content/plugins/elementor/includes/base/control in /home1/bolsad57/public_html/suno/wp-content/plugins/elementor-hello-world-master/widgets/hello-world.php on line 153
+[03-Jan-2020 23:53:22 UTC] PHP Fatal error:  Uncaught Error: Class 'ElementorHelloWorld\Widgets\Schemes\Color' not found in /home1/bolsad57/public_html/suno/wp-content/plugins/elementor-hello-world-master/widgets/hello-world.php:135
+Stack trace:
+#0 /home1/bolsad57/public_html/suno/wp-content/plugins/elementor/includes/base/controls-stack.php(1880): ElementorHelloWorld\Widgets\Hello_World->_register_controls()
+#1 /home1/bolsad57/public_html/suno/wp-content/plugins/elementor/includes/base/controls-stack.php(488): Elementor\Controls_Stack->init_controls()
+#2 /home1/bolsad57/public_html/suno/wp-content/plugins/elementor/includes/base/widget-base.php(148): Elementor\Controls_Stack->get_stack()
+#3 /home1/bolsad57/public_html/suno/wp-content/plugins/elementor/includes/base/controls-stack.php(281): Elementor\Widget_Base->get_stack()
+#4 /home1/bolsad57/public_html/suno/wp-content/plugins/elementor/includes/base/controls-stack.php(1915): Elementor\Controls_Stack->get_controls()
+#5 /home1/bolsad57/public_html/suno/wp-content/plugins/elementor/includes/base/control in /home1/bolsad57/public_html/suno/wp-content/plugins/elementor-hello-world-master/widgets/hello-world.php on line 135
+[03-Jan-2020 23:53:45 UTC] PHP Fatal error:  Uncaught Error: Class 'ElementorHelloWorld\Widgets\Schemes\Color' not found in /home1/bolsad57/public_html/suno/wp-content/plugins/elementor-hello-world-master/widgets/hello-world.php:135
+Stack trace:
+#0 /home1/bolsad57/public_html/suno/wp-content/plugins/elementor/includes/base/controls-stack.php(1880): ElementorHelloWorld\Widgets\Hello_World->_register_controls()
+#1 /home1/bolsad57/public_html/suno/wp-content/plugins/elementor/includes/base/controls-stack.php(488): Elementor\Controls_Stack->init_controls()
+#2 /home1/bolsad57/public_html/suno/wp-content/plugins/elementor/includes/base/widget-base.php(148): Elementor\Controls_Stack->get_stack()
+#3 /home1/bolsad57/public_html/suno/wp-content/plugins/elementor/includes/base/controls-stack.php(281): Elementor\Widget_Base->get_stack()
+#4 /home1/bolsad57/public_html/suno/wp-content/plugins/elementor/includes/base/controls-stack.php(1915): Elementor\Controls_Stack->get_controls()
+#5 /home1/bolsad57/public_html/suno/wp-content/plugins/elementor/includes/base/control in /home1/bolsad57/public_html/suno/wp-content/plugins/elementor-hello-world-master/widgets/hello-world.php on line 135
+[03-Jan-2020 23:59:15 UTC] PHP Fatal error:  Uncaught Error: Class 'ElementorHelloWorld\Widgets\Schemes\Color' not found in /home1/bolsad57/public_html/suno/wp-content/plugins/elementor-hello-world-master/widgets/hello-world.php:135
+Stack trace:
+#0 /home1/bolsad57/public_html/suno/wp-content/plugins/elementor/includes/base/controls-stack.php(1880): ElementorHelloWorld\Widgets\Hello_World->_register_controls()
+#1 /home1/bolsad57/public_html/suno/wp-content/plugins/elementor/includes/base/controls-stack.php(488): Elementor\Controls_Stack->init_controls()
+#2 /home1/bolsad57/public_html/suno/wp-content/plugins/elementor/includes/base/widget-base.php(148): Elementor\Controls_Stack->get_stack()
+#3 /home1/bolsad57/public_html/suno/wp-content/plugins/elementor/includes/base/controls-stack.php(281): Elementor\Widget_Base->get_stack()
+#4 /home1/bolsad57/public_html/suno/wp-content/plugins/elementor/includes/base/controls-stack.php(1915): Elementor\Controls_Stack->get_controls()
+#5 /home1/bolsad57/public_html/suno/wp-content/plugins/elementor/includes/base/control in /home1/bolsad57/public_html/suno/wp-content/plugins/elementor-hello-world-master/widgets/hello-world.php on line 135
+[03-Jan-2020 23:59:57 UTC] PHP Fatal error:  Uncaught Error: Class 'ElementorHelloWorld\Widgets\Schemes\Color' not found in /home1/bolsad57/public_html/suno/wp-content/plugins/elementor-hello-world-master/widgets/hello-world.php:135
+Stack trace:
+#0 /home1/bolsad57/public_html/suno/wp-content/plugins/elementor/includes/base/controls-stack.php(1880): ElementorHelloWorld\Widgets\Hello_World->_register_controls()
+#1 /home1/bolsad57/public_html/suno/wp-content/plugins/elementor/includes/base/controls-stack.php(488): Elementor\Controls_Stack->init_controls()
+#2 /home1/bolsad57/public_html/suno/wp-content/plugins/elementor/includes/base/widget-base.php(148): Elementor\Controls_Stack->get_stack()
+#3 /home1/bolsad57/public_html/suno/wp-content/plugins/elementor/includes/base/controls-stack.php(281): Elementor\Widget_Base->get_stack()
+#4 /home1/bolsad57/public_html/suno/wp-content/plugins/elementor/includes/base/controls-stack.php(1915): Elementor\Controls_Stack->get_controls()
+#5 /home1/bolsad57/public_html/suno/wp-content/plugins/elementor/includes/base/control in /home1/bolsad57/public_html/suno/wp-content/plugins/elementor-hello-world-master/widgets/hello-world.php on line 135
+[04-Jan-2020 00:01:45 UTC] PHP Fatal error:  Uncaught Error: Class 'ElementorHelloWorld\Widgets\Group_Control_Typography' not found in /home1/bolsad57/public_html/suno/wp-content/plugins/elementor-hello-world-master/widgets/hello-world.php:126
+Stack trace:
+#0 /home1/bolsad57/public_html/suno/wp-content/plugins/elementor/includes/base/controls-stack.php(1880): ElementorHelloWorld\Widgets\Hello_World->_register_controls()
+#1 /home1/bolsad57/public_html/suno/wp-content/plugins/elementor/includes/base/controls-stack.php(488): Elementor\Controls_Stack->init_controls()
+#2 /home1/bolsad57/public_html/suno/wp-content/plugins/elementor/includes/base/widget-base.php(148): Elementor\Controls_Stack->get_stack()
+#3 /home1/bolsad57/public_html/suno/wp-content/plugins/elementor/includes/base/controls-stack.php(281): Elementor\Widget_Base->get_stack()
+#4 /home1/bolsad57/public_html/suno/wp-content/plugins/elementor/includes/base/controls-stack.php(1915): Elementor\Controls_Stack->get_controls()
+#5 /home1/bolsad57/public_html/suno/wp-content/plugins/elementor/includes/b in /home1/bolsad57/public_html/suno/wp-content/plugins/elementor-hello-world-master/widgets/hello-world.php on line 126
+[04-Jan-2020 00:02:51 UTC] PHP Fatal error:  Uncaught Error: Class 'ElementorHelloWorld\Widgets\Color' not found in /home1/bolsad57/public_html/suno/wp-content/plugins/elementor-hello-world-master/widgets/hello-world.php:135
+Stack trace:
+#0 /home1/bolsad57/public_html/suno/wp-content/plugins/elementor/includes/base/controls-stack.php(1880): ElementorHelloWorld\Widgets\Hello_World->_register_controls()
+#1 /home1/bolsad57/public_html/suno/wp-content/plugins/elementor/includes/base/controls-stack.php(488): Elementor\Controls_Stack->init_controls()
+#2 /home1/bolsad57/public_html/suno/wp-content/plugins/elementor/includes/base/widget-base.php(148): Elementor\Controls_Stack->get_stack()
+#3 /home1/bolsad57/public_html/suno/wp-content/plugins/elementor/includes/base/controls-stack.php(281): Elementor\Widget_Base->get_stack()
+#4 /home1/bolsad57/public_html/suno/wp-content/plugins/elementor/includes/base/controls-stack.php(1915): Elementor\Controls_Stack->get_controls()
+#5 /home1/bolsad57/public_html/suno/wp-content/plugins/elementor/includes/base/controls-stack. in /home1/bolsad57/public_html/suno/wp-content/plugins/elementor-hello-world-master/widgets/hello-world.php on line 135
+[04-Jan-2020 00:02:53 UTC] PHP Fatal error:  Uncaught Error: Class 'ElementorHelloWorld\Widgets\Color' not found in /home1/bolsad57/public_html/suno/wp-content/plugins/elementor-hello-world-master/widgets/hello-world.php:135
+Stack trace:
+#0 /home1/bolsad57/public_html/suno/wp-content/plugins/elementor/includes/base/controls-stack.php(1880): ElementorHelloWorld\Widgets\Hello_World->_register_controls()
+#1 /home1/bolsad57/public_html/suno/wp-content/plugins/elementor/includes/base/controls-stack.php(488): Elementor\Controls_Stack->init_controls()
+#2 /home1/bolsad57/public_html/suno/wp-content/plugins/elementor/includes/base/widget-base.php(148): Elementor\Controls_Stack->get_stack()
+#3 /home1/bolsad57/public_html/suno/wp-content/plugins/elementor/includes/base/controls-stack.php(281): Elementor\Widget_Base->get_stack()
+#4 /home1/bolsad57/public_html/suno/wp-content/plugins/elementor/includes/base/controls-stack.php(1915): Elementor\Controls_Stack->get_controls()
+#5 /home1/bolsad57/public_html/suno/wp-content/plugins/elementor/includes/base/controls-stack. in /home1/bolsad57/public_html/suno/wp-content/plugins/elementor-hello-world-master/widgets/hello-world.php on line 135
+[04-Jan-2020 00:13:55 UTC] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ')' in /home1/bolsad57/public_html/suno/wp-content/plugins/elementor-hello-world-master/widgets/hello-world.php on line 132
+[04-Jan-2020 00:14:11 UTC] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ')' in /home1/bolsad57/public_html/suno/wp-content/plugins/elementor-hello-world-master/widgets/hello-world.php on line 132
+[04-Jan-2020 00:14:25 UTC] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ')' in /home1/bolsad57/public_html/suno/wp-content/plugins/elementor-hello-world-master/widgets/hello-world.php on line 132
+[04-Jan-2020 00:34:00 UTC] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ')' in /home1/bolsad57/public_html/suno/wp-content/plugins/elementor-hello-world-master/widgets/hello-world.php on line 132
+[04-Jan-2020 00:34:12 UTC] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ')' in /home1/bolsad57/public_html/suno/wp-content/plugins/elementor-hello-world-master/widgets/hello-world.php on line 132
+[04-Jan-2020 00:36:22 UTC] PHP Fatal error:  Uncaught Error: Class 'ElementorHelloWorld\Widgets\Schemes\Color' not found in /home1/bolsad57/public_html/suno/wp-content/plugins/elementor-hello-world-master/widgets/hello-world.php:135
+Stack trace:
+#0 /home1/bolsad57/public_html/suno/wp-content/plugins/elementor/includes/base/controls-stack.php(1880): ElementorHelloWorld\Widgets\Hello_World->_register_controls()
+#1 /home1/bolsad57/public_html/suno/wp-content/plugins/elementor/includes/base/controls-stack.php(488): Elementor\Controls_Stack->init_controls()
+#2 /home1/bolsad57/public_html/suno/wp-content/plugins/elementor/includes/base/widget-base.php(148): Elementor\Controls_Stack->get_stack()
+#3 /home1/bolsad57/public_html/suno/wp-content/plugins/elementor/includes/base/controls-stack.php(281): Elementor\Widget_Base->get_stack()
+#4 /home1/bolsad57/public_html/suno/wp-content/plugins/elementor/includes/base/controls-stack.php(1915): Elementor\Controls_Stack->get_controls()
+#5 /home1/bolsad57/public_html/suno/wp-content/plugins/elementor/includes/base/control in /home1/bolsad57/public_html/suno/wp-content/plugins/elementor-hello-world-master/widgets/hello-world.php on line 135
+[04-Jan-2020 21:23:07 UTC] PHP Fatal error:  Uncaught Error: Class 'ElementorHelloWorld\Widgets\Hello_World' not found in /home1/bolsad57/public_html/suno/wp-content/plugins/elementor-hello-world-master/plugin.php:78
+Stack trace:
+#0 /home1/bolsad57/public_html/suno/wp-includes/class-wp-hook.php(288): ElementorHelloWorld\Plugin->register_widgets(Object(Elementor\Widgets_Manager))
+#1 /home1/bolsad57/public_html/suno/wp-includes/class-wp-hook.php(312): WP_Hook->apply_filters('', Array)
+#2 /home1/bolsad57/public_html/suno/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /home1/bolsad57/public_html/suno/wp-content/plugins/elementor/includes/managers/widgets.php(99): do_action('elementor/widge...', Object(Elementor\Widgets_Manager))
+#4 /home1/bolsad57/public_html/suno/wp-content/plugins/elementor/includes/managers/widgets.php(235): Elementor\Widgets_Manager->init_widgets()
+#5 /home1/bolsad57/public_html/suno/wp-content/plugins/elementor/includes/elements/column.php(1027): Elementor\Widgets_Manager->get_widget_types('heading')
+#6 /home1/bolsad57/publi in /home1/bolsad57/public_html/suno/wp-content/plugins/elementor-hello-world-master/plugin.php on line 78
+[04-Jan-2020 21:42:41 UTC] PHP Parse error:  syntax error, unexpected 'add_action' (T_STRING), expecting function (T_FUNCTION) or const (T_CONST) in /home1/bolsad57/public_html/suno/wp-content/plugins/elementor-hello-world-master/widgets/hello-world.php on line 202
+[04-Jan-2020 21:44:51 UTC] PHP Parse error:  syntax error, unexpected 'add_action' (T_STRING), expecting function (T_FUNCTION) or const (T_CONST) in /home1/bolsad57/public_html/suno/wp-content/plugins/elementor-hello-world-master/widgets/hello-world.php on line 202
+[05-Jan-2020 00:52:46 UTC] PHP Fatal error:  Cannot declare class ThemeIsle\ElementorExtraWidgets\Posts_Grid, because the name is already in use in /home1/bolsad57/public_html/suno/wp-content/plugins/elementor-hello-world-master/widgets/hello-world.php on line 1810
+[05-Jan-2020 00:54:53 UTC] PHP Fatal error:  Uncaught Error: Class 'ElementorHelloWorld\Widgets\Hello_World' not found in /home1/bolsad57/public_html/suno/wp-content/plugins/elementor-hello-world-master/plugin.php:78
+Stack trace:
+#0 /home1/bolsad57/public_html/suno/wp-includes/class-wp-hook.php(288): ElementorHelloWorld\Plugin->register_widgets(Object(Elementor\Widgets_Manager))
+#1 /home1/bolsad57/public_html/suno/wp-includes/class-wp-hook.php(312): WP_Hook->apply_filters(NULL, Array)
+#2 /home1/bolsad57/public_html/suno/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /home1/bolsad57/public_html/suno/wp-content/plugins/elementor/includes/managers/widgets.php(99): do_action('elementor/widge...', Object(Elementor\Widgets_Manager))
+#4 /home1/bolsad57/public_html/suno/wp-content/plugins/elementor/includes/managers/widgets.php(235): Elementor\Widgets_Manager->init_widgets()
+#5 /home1/bolsad57/public_html/suno/wp-content/plugins/elementor/includes/elements/column.php(1027): Elementor\Widgets_Manager->get_widget_types('heading')
+#6 /home1/bolsad57/pub in /home1/bolsad57/public_html/suno/wp-content/plugins/elementor-hello-world-master/plugin.php on line 78
+[05-Jan-2020 00:56:31 UTC] PHP Warning:  file_get_contents(/home1/bolsad57/public_html/suno/wp-content/plugins/css/public.css): failed to open stream: No such file or directory in /home1/bolsad57/public_html/suno/wp-content/plugins/elementor-hello-world-master/widgets/hello-world.php on line 1796
+[05-Jan-2020 01:04:17 UTC] PHP Warning:  file_get_contents(/home1/bolsad57/public_html/suno/wp-content/plugins/css/public.css): failed to open stream: No such file or directory in /home1/bolsad57/public_html/suno/wp-content/plugins/elementor-hello-world-master/widgets/hello-world.php on line 1796
+[05-Jan-2020 01:04:23 UTC] PHP Warning:  file_get_contents(/home1/bolsad57/public_html/suno/wp-content/plugins/css/public.css): failed to open stream: No such file or directory in /home1/bolsad57/public_html/suno/wp-content/plugins/elementor-hello-world-master/widgets/hello-world.php on line 1796
+[05-Jan-2020 01:04:45 UTC] PHP Warning:  file_get_contents(/home1/bolsad57/public_html/suno/wp-content/plugins/css/public.css): failed to open stream: No such file or directory in /home1/bolsad57/public_html/suno/wp-content/plugins/elementor-hello-world-master/widgets/hello-world.php on line 1796
+[05-Jan-2020 01:04:46 UTC] PHP Warning:  file_get_contents(/home1/bolsad57/public_html/suno/wp-content/plugins/css/public.css): failed to open stream: No such file or directory in /home1/bolsad57/public_html/suno/wp-content/plugins/elementor-hello-world-master/widgets/hello-world.php on line 1796
+[05-Jan-2020 01:04:54 UTC] PHP Warning:  file_get_contents(/home1/bolsad57/public_html/suno/wp-content/plugins/css/public.css): failed to open stream: No such file or directory in /home1/bolsad57/public_html/suno/wp-content/plugins/elementor-hello-world-master/widgets/hello-world.php on line 1796
+[05-Jan-2020 01:04:57 UTC] PHP Warning:  file_get_contents(/home1/bolsad57/public_html/suno/wp-content/plugins/css/public.css): failed to open stream: No such file or directory in /home1/bolsad57/public_html/suno/wp-content/plugins/elementor-hello-world-master/widgets/hello-world.php on line 1796
+[05-Jan-2020 01:05:04 UTC] PHP Warning:  file_get_contents(/home1/bolsad57/public_html/suno/wp-content/plugins/css/public.css): failed to open stream: No such file or directory in /home1/bolsad57/public_html/suno/wp-content/plugins/elementor-hello-world-master/widgets/hello-world.php on line 1796
+[05-Jan-2020 01:05:12 UTC] PHP Warning:  file_get_contents(/home1/bolsad57/public_html/suno/wp-content/plugins/css/public.css): failed to open stream: No such file or directory in /home1/bolsad57/public_html/suno/wp-content/plugins/elementor-hello-world-master/widgets/hello-world.php on line 1796
+[05-Jan-2020 01:05:15 UTC] PHP Warning:  file_get_contents(/home1/bolsad57/public_html/suno/wp-content/plugins/css/public.css): failed to open stream: No such file or directory in /home1/bolsad57/public_html/suno/wp-content/plugins/elementor-hello-world-master/widgets/hello-world.php on line 1796
+[05-Jan-2020 01:05:27 UTC] PHP Warning:  file_get_contents(/home1/bolsad57/public_html/suno/wp-content/plugins/css/public.css): failed to open stream: No such file or directory in /home1/bolsad57/public_html/suno/wp-content/plugins/elementor-hello-world-master/widgets/hello-world.php on line 1796
+[05-Jan-2020 01:09:28 UTC] PHP Parse error:  syntax error, unexpected '?>', expecting function (T_FUNCTION) or const (T_CONST) in /home1/bolsad57/public_html/suno/wp-content/plugins/elementor-hello-world-master/widgets/hello-world.php on line 1794
+[05-Jan-2020 01:16:08 UTC] PHP Warning:  file_get_contents(/home1/bolsad57/public_html/suno/wp-content/plugins/css/public.css): failed to open stream: No such file or directory in /home1/bolsad57/public_html/suno/wp-content/plugins/elementor-hello-world-master/widgets/hello-world.php on line 1796
+[05-Jan-2020 01:16:13 UTC] PHP Warning:  file_get_contents(/home1/bolsad57/public_html/suno/wp-content/plugins/css/public.css): failed to open stream: No such file or directory in /home1/bolsad57/public_html/suno/wp-content/plugins/elementor-hello-world-master/widgets/hello-world.php on line 1796
+[05-Jan-2020 01:16:19 UTC] PHP Warning:  file_get_contents(/home1/bolsad57/public_html/suno/wp-content/plugins/css/public.css): failed to open stream: No such file or directory in /home1/bolsad57/public_html/suno/wp-content/plugins/elementor-hello-world-master/widgets/hello-world.php on line 1796
+[05-Jan-2020 01:16:24 UTC] PHP Warning:  file_get_contents(/home1/bolsad57/public_html/suno/wp-content/plugins/css/public.css): failed to open stream: No such file or directory in /home1/bolsad57/public_html/suno/wp-content/plugins/elementor-hello-world-master/widgets/hello-world.php on line 1796
+[05-Jan-2020 01:16:27 UTC] PHP Warning:  file_get_contents(/home1/bolsad57/public_html/suno/wp-content/plugins/css/public.css): failed to open stream: No such file or directory in /home1/bolsad57/public_html/suno/wp-content/plugins/elementor-hello-world-master/widgets/hello-world.php on line 1796
+[05-Jan-2020 01:16:37 UTC] PHP Warning:  file_get_contents(/home1/bolsad57/public_html/suno/wp-content/plugins/css/public.css): failed to open stream: No such file or directory in /home1/bolsad57/public_html/suno/wp-content/plugins/elementor-hello-world-master/widgets/hello-world.php on line 1796
+[05-Jan-2020 01:16:40 UTC] PHP Warning:  file_get_contents(/home1/bolsad57/public_html/suno/wp-content/plugins/css/public.css): failed to open stream: No such file or directory in /home1/bolsad57/public_html/suno/wp-content/plugins/elementor-hello-world-master/widgets/hello-world.php on line 1796
+[05-Jan-2020 01:16:41 UTC] PHP Warning:  file_get_contents(/home1/bolsad57/public_html/suno/wp-content/plugins/css/public.css): failed to open stream: No such file or directory in /home1/bolsad57/public_html/suno/wp-content/plugins/elementor-hello-world-master/widgets/hello-world.php on line 1796
+[05-Jan-2020 01:16:46 UTC] PHP Warning:  file_get_contents(/home1/bolsad57/public_html/suno/wp-content/plugins/css/public.css): failed to open stream: No such file or directory in /home1/bolsad57/public_html/suno/wp-content/plugins/elementor-hello-world-master/widgets/hello-world.php on line 1796
+[05-Jan-2020 01:46:51 UTC] PHP Warning:  file_get_contents(/home1/bolsad57/public_html/suno/wp-content/plugins/css/public.css): failed to open stream: No such file or directory in /home1/bolsad57/public_html/suno/wp-content/plugins/elementor-hello-world-master/widgets/hello-world.php on line 1796
+[05-Jan-2020 01:47:19 UTC] PHP Warning:  file_get_contents(/home1/bolsad57/public_html/suno/wp-content/plugins/css/public.css): failed to open stream: No such file or directory in /home1/bolsad57/public_html/suno/wp-content/plugins/elementor-hello-world-master/widgets/hello-world.php on line 1796
+[05-Jan-2020 01:47:22 UTC] PHP Warning:  file_get_contents(/home1/bolsad57/public_html/suno/wp-content/plugins/css/public.css): failed to open stream: No such file or directory in /home1/bolsad57/public_html/suno/wp-content/plugins/elementor-hello-world-master/widgets/hello-world.php on line 1796
+[05-Jan-2020 01:51:47 UTC] PHP Warning:  file_get_contents(/home1/bolsad57/public_html/suno/wp-content/plugins/css/public.css): failed to open stream: No such file or directory in /home1/bolsad57/public_html/suno/wp-content/plugins/elementor-hello-world-master/widgets/hello-world.php on line 1796
+[05-Jan-2020 01:51:56 UTC] PHP Warning:  file_get_contents(/home1/bolsad57/public_html/suno/wp-content/plugins/css/public.css): failed to open stream: No such file or directory in /home1/bolsad57/public_html/suno/wp-content/plugins/elementor-hello-world-master/widgets/hello-world.php on line 1796
+[05-Jan-2020 01:52:21 UTC] PHP Warning:  file_get_contents(/home1/bolsad57/public_html/suno/wp-content/plugins/css/public.css): failed to open stream: No such file or directory in /home1/bolsad57/public_html/suno/wp-content/plugins/elementor-hello-world-master/widgets/hello-world.php on line 1796
+[05-Jan-2020 01:52:27 UTC] PHP Warning:  file_get_contents(/home1/bolsad57/public_html/suno/wp-content/plugins/css/public.css): failed to open stream: No such file or directory in /home1/bolsad57/public_html/suno/wp-content/plugins/elementor-hello-world-master/widgets/hello-world.php on line 1796
+[05-Jan-2020 01:52:31 UTC] PHP Warning:  file_get_contents(/home1/bolsad57/public_html/suno/wp-content/plugins/css/public.css): failed to open stream: No such file or directory in /home1/bolsad57/public_html/suno/wp-content/plugins/elementor-hello-world-master/widgets/hello-world.php on line 1796
+[05-Jan-2020 01:52:33 UTC] PHP Warning:  file_get_contents(/home1/bolsad57/public_html/suno/wp-content/plugins/css/public.css): failed to open stream: No such file or directory in /home1/bolsad57/public_html/suno/wp-content/plugins/elementor-hello-world-master/widgets/hello-world.php on line 1796
+[05-Jan-2020 01:52:46 UTC] PHP Warning:  file_get_contents(/home1/bolsad57/public_html/suno/wp-content/plugins/css/public.css): failed to open stream: No such file or directory in /home1/bolsad57/public_html/suno/wp-content/plugins/elementor-hello-world-master/widgets/hello-world.php on line 1796
+[05-Jan-2020 01:52:49 UTC] PHP Warning:  file_get_contents(/home1/bolsad57/public_html/suno/wp-content/plugins/css/public.css): failed to open stream: No such file or directory in /home1/bolsad57/public_html/suno/wp-content/plugins/elementor-hello-world-master/widgets/hello-world.php on line 1796
+[05-Jan-2020 01:53:00 UTC] PHP Warning:  file_get_contents(/home1/bolsad57/public_html/suno/wp-content/plugins/css/public.css): failed to open stream: No such file or directory in /home1/bolsad57/public_html/suno/wp-content/plugins/elementor-hello-world-master/widgets/hello-world.php on line 1796
+[05-Jan-2020 01:53:05 UTC] PHP Warning:  file_get_contents(/home1/bolsad57/public_html/suno/wp-content/plugins/css/public.css): failed to open stream: No such file or directory in /home1/bolsad57/public_html/suno/wp-content/plugins/elementor-hello-world-master/widgets/hello-world.php on line 1796
+[05-Jan-2020 02:08:40 UTC] PHP Warning:  file_get_contents(/home1/bolsad57/public_html/suno/wp-content/plugins/public.css): failed to open stream: No such file or directory in /home1/bolsad57/public_html/suno/wp-content/plugins/elementor-hello-world-master/widgets/hello-world.php on line 1796
+[05-Jan-2020 02:09:55 UTC] PHP Warning:  file_get_contents(/home1/bolsad57/public_html/suno/wp-content/plugins/public.css): failed to open stream: No such file or directory in /home1/bolsad57/public_html/suno/wp-content/plugins/elementor-hello-world-master/widgets/hello-world.php on line 1796
+[05-Jan-2020 02:11:47 UTC] PHP Warning:  file_get_contents(/home1/bolsad57/public_html/suno/wp-content/plugins/public.css): failed to open stream: No such file or directory in /home1/bolsad57/public_html/suno/wp-content/plugins/elementor-hello-world-master/widgets/hello-world.php on line 1796
+[05-Jan-2020 02:13:53 UTC] PHP Warning:  file_get_contents(/home1/bolsad57/public_html/suno/wp-content/plugins/public.css): failed to open stream: No such file or directory in /home1/bolsad57/public_html/suno/wp-content/plugins/elementor-hello-world-master/widgets/hello-world.php on line 1796
+[05-Jan-2020 02:14:00 UTC] PHP Warning:  file_get_contents(/home1/bolsad57/public_html/suno/wp-content/plugins/public.css): failed to open stream: No such file or directory in /home1/bolsad57/public_html/suno/wp-content/plugins/elementor-hello-world-master/widgets/hello-world.php on line 1796
+[05-Jan-2020 02:14:03 UTC] PHP Warning:  file_get_contents(/home1/bolsad57/public_html/suno/wp-content/plugins/public.css): failed to open stream: No such file or directory in /home1/bolsad57/public_html/suno/wp-content/plugins/elementor-hello-world-master/widgets/hello-world.php on line 1796
+[05-Jan-2020 02:15:55 UTC] PHP Warning:  file_get_contents(/home1/bolsad57/public_html/suno/wp-content/plugins/public.css): failed to open stream: No such file or directory in /home1/bolsad57/public_html/suno/wp-content/plugins/elementor-hello-world-master/widgets/hello-world.php on line 1796
+[05-Jan-2020 02:16:30 UTC] PHP Warning:  file_get_contents(/home1/bolsad57/public_html/suno/wp-content/plugins/public.css): failed to open stream: No such file or directory in /home1/bolsad57/public_html/suno/wp-content/plugins/elementor-hello-world-master/widgets/hello-world.php on line 1796
+[05-Jan-2020 02:18:08 UTC] PHP Warning:  file_get_contents(/home1/bolsad57/public_html/suno/wp-content/plugins/public.css): failed to open stream: No such file or directory in /home1/bolsad57/public_html/suno/wp-content/plugins/elementor-hello-world-master/widgets/hello-world.php on line 1796
+[05-Jan-2020 02:20:08 UTC] PHP Warning:  file_get_contents(/home1/bolsad57/public_html/suno/wp-content/plugins//public.css): failed to open stream: No such file or directory in /home1/bolsad57/public_html/suno/wp-content/plugins/elementor-hello-world-master/widgets/hello-world.php on line 1796
+[05-Jan-2020 02:21:20 UTC] PHP Warning:  file_get_contents(/home1/bolsad57/public_html/suno/wp-content/plugins//public.css): failed to open stream: No such file or directory in /home1/bolsad57/public_html/suno/wp-content/plugins/elementor-hello-world-master/widgets/hello-world.php on line 1796
+[05-Jan-2020 02:22:02 UTC] PHP Warning:  file_get_contents(/home1/bolsad57/public_html/suno/wp-content/plugins//public.css): failed to open stream: No such file or directory in /home1/bolsad57/public_html/suno/wp-content/plugins/elementor-hello-world-master/widgets/hello-world.php on line 1796
