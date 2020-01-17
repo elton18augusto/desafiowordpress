@@ -26,6 +26,12 @@
 		<!-- Font Awesome -->
 		<script src="https://kit.fontawesome.com/b717812a84.js" crossorigin="anonymous"></script>
 
+		<!-- flickity -->
+		<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+		<!-- flickity js -->
+		<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
 		<?php wp_head(); ?>
 
 	</head>

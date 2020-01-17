@@ -17,10 +17,10 @@
 				<div class="section-menu">
 					<div class="container">
 						<div class="row">
-							<div class="col-12 col-lg-3">
+							<div class="col-12 col-lg-3 mb-5">
 								<img src="<?php echo get_template_directory_uri(); ?>/assets/images/suno-rodape.jpg" alt="">
 							</div>
-							<div class="col-6 col-lg-2 menu-footer">
+							<div class="col-6 col-sm-3 col-lg-2 menu-footer">
 								<h1>assinaturas</h1>
 
 								<li>
@@ -42,7 +42,7 @@
 									<a href="#"><i class="fas fa-arrow-right"></i> Suno Fundos</a>
 								</li>
 							</div>
-							<div class="col-6 col-lg-2 menu-footer">
+							<div class="col-6 col-sm-3 col-lg-2 menu-footer">
 								<h1>conteúdos grátis</h1>
 
 								<li>
@@ -61,7 +61,7 @@
 									<a href="#"><i class="fas fa-arrow-right"></i> Extras</a>
 								</li>
 							</div>
-							<div class="col-6 col-lg-2 menu-footer">
+							<div class="col-6 col-sm-3 col-lg-2 menu-footer">
 								<h1>artigos</h1>
 
 								<li>
@@ -80,7 +80,7 @@
 									<a href="#"><i class="fas fa-arrow-right"></i> O que fazer?</a>
 								</li>
 							</div>
-							<div class="col-6 col-lg-2 menu-footer">
+							<div class="col-6 col-sm-3 col-lg-2 menu-footer">
 								<h1>extras</h1>
 
 								<li>
@@ -122,6 +122,16 @@
 			</footer><!-- #footer -->
 
 		<?php wp_footer(); ?>
+
+		<script>
+			$('.main-carousel').flickity({
+			  // options
+			  cellAlign: 'left',
+			  contain: true,
+			  prevNextButtons: false,
+			  draggable: false
+			});
+		</script>
 
 	</body>
 </html>

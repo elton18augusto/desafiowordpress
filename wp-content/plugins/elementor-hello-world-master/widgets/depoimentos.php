@@ -1,5 +1,5 @@
 <?php
-namespace ElementorHelloWorld\Widgets;
+namespace ElementorDepoimentos\Widgets;
 
 use Elementor\Widget_Base;
 use Elementor\Controls_Manager;
@@ -13,7 +13,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
  *
  * @since 1.0.0
  */
-class Hello_World extends Widget_Base {
+class Depoimentos extends Widget_Base {
 
 	/**
 	 * Widget title.
@@ -21,7 +21,7 @@ class Hello_World extends Widget_Base {
 	 * @return string
 	 */
 	public function get_title() {
-		return __( 'Suno Research', 'elementor-hello-world' );
+		return __( 'Suno Depoimentos', 'elementor-depoimentos' );
 	}
 
 	/**
@@ -157,7 +157,7 @@ class Hello_World extends Widget_Base {
 		$this->start_controls_section(
 			'section_grid',
 			[
-				'label' => __( 'Grid Options', 'elementor-hello-world' ),
+				'label' => __( 'Grid Options', 'elementor-depoimentos' ),
 			]
 		);
 
@@ -166,7 +166,7 @@ class Hello_World extends Widget_Base {
 			'grid_post_type',
 			[
 				'type'    => \Elementor\Controls_Manager::SELECT,
-				'label'   => '<i class="fa fa-tag"></i> ' . __( 'Post Type', 'elementor-hello-world' ),
+				'label'   => '<i class="fa fa-tag"></i> ' . __( 'Post Type', 'elementor-depoimentos' ),
 				'default' => 'post',
 				'options' => $this->grid_get_all_post_types(),
 			]
@@ -177,7 +177,7 @@ class Hello_World extends Widget_Base {
 			'grid_post_categories',
 			[
 				'type'      => \Elementor\Controls_Manager::SELECT,
-				'label'     => '<i class="fa fa-folder"></i> ' . __( 'Category', 'elementor-hello-world' ),
+				'label'     => '<i class="fa fa-folder"></i> ' . __( 'Category', 'elementor-depoimentos' ),
 				'options'   => $this->grid_get_all_post_type_categories( 'post' ),
 				'condition' => [
 					'grid_post_type' => 'post',
@@ -190,7 +190,7 @@ class Hello_World extends Widget_Base {
 			'grid_product_categories',
 			[
 				'type'      => \Elementor\Controls_Manager::SELECT,
-				'label'     => '<i class="fa fa-tag"></i> ' . __( 'Category', 'elementor-hello-world' ),
+				'label'     => '<i class="fa fa-tag"></i> ' . __( 'Category', 'elementor-depoimentos' ),
 				'options'   => $this->grid_get_all_post_type_categories( 'product' ),
 				'condition' => [
 					'grid_post_type' => 'product',
@@ -203,11 +203,11 @@ class Hello_World extends Widget_Base {
 			'grid_style',
 			[
 				'type'    => \Elementor\Controls_Manager::SELECT,
-				'label'   => '<i class="fa fa-paint-brush"></i> ' . __( 'Style', 'elementor-hello-world' ),
+				'label'   => '<i class="fa fa-paint-brush"></i> ' . __( 'Style', 'elementor-depoimentos' ),
 				'default' => 'grid',
 				'options' => [
-					'grid' => __( 'Grid', 'elementor-hello-world' ),
-					'list' => __( 'List', 'elementor-hello-world' ),
+					'grid' => __( 'Grid', 'elementor-depoimentos' ),
+					'list' => __( 'List', 'elementor-depoimentos' ),
 				],
 			]
 		);
@@ -217,8 +217,8 @@ class Hello_World extends Widget_Base {
 			'grid_items',
 			[
 				'type'        => \Elementor\Controls_Manager::NUMBER,
-				'label'       => '<i class="fa fa-th-large"></i> ' . __( 'Items', 'elementor-hello-world' ),
-				'placeholder' => __( 'How many items?', 'elementor-hello-world' ),
+				'label'       => '<i class="fa fa-th-large"></i> ' . __( 'Items', 'elementor-depoimentos' ),
+				'placeholder' => __( 'How many items?', 'elementor-depoimentos' ),
 				'default'     => 6,
 			]
 		);
@@ -228,7 +228,7 @@ class Hello_World extends Widget_Base {
 			'grid_columns',
 			[
 				'type'           => \Elementor\Controls_Manager::SELECT,
-				'label'          => '<i class="fa fa-columns"></i> ' . __( 'Columns', 'elementor-hello-world' ),
+				'label'          => '<i class="fa fa-columns"></i> ' . __( 'Columns', 'elementor-depoimentos' ),
 				'default'        => 3,
 				'tablet_default' => 2,
 				'mobile_default' => 1,
@@ -247,14 +247,14 @@ class Hello_World extends Widget_Base {
 			'grid_order_by',
 			[
 				'type'    => \Elementor\Controls_Manager::SELECT,
-				'label'   => '<i class="fa fa-sort"></i> ' . __( 'Order by', 'elementor-hello-world' ),
+				'label'   => '<i class="fa fa-sort"></i> ' . __( 'Order by', 'elementor-depoimentos' ),
 				'default' => 'date',
 				'options' => [
-					'date'          => __( 'Date', 'elementor-hello-world' ),
-					'title'         => __( 'Title', 'elementor-hello-world' ),
-					'modified'      => __( 'Modified date', 'elementor-hello-world' ),
-					'comment_count' => __( 'Comment count', 'elementor-hello-world' ),
-					'rand'          => __( 'Random', 'elementor-hello-world' ),
+					'date'          => __( 'Date', 'elementor-depoimentos' ),
+					'title'         => __( 'Title', 'elementor-depoimentos' ),
+					'modified'      => __( 'Modified date', 'elementor-depoimentos' ),
+					'comment_count' => __( 'Comment count', 'elementor-depoimentos' ),
+					'rand'          => __( 'Random', 'elementor-depoimentos' ),
 				],
 			]
 		);
@@ -263,7 +263,7 @@ class Hello_World extends Widget_Base {
 		$this->add_control(
 			'grid_pagination',
 			[
-				'label'   => '<i class="fa fa-arrow-circle-right"></i> ' . __( 'Pagination', 'elementor-hello-world' ),
+				'label'   => '<i class="fa fa-arrow-circle-right"></i> ' . __( 'Pagination', 'elementor-depoimentos' ),
 				'type'    => \Elementor\Controls_Manager::SWITCHER,
 				'default' => '',
 			]
@@ -279,7 +279,7 @@ class Hello_World extends Widget_Base {
 		$this->start_controls_section(
 			'section_grid_image',
 			[
-				'label' => __( 'Image', 'elementor-hello-world' ),
+				'label' => __( 'Image', 'elementor-depoimentos' ),
 			]
 		);
 
@@ -287,7 +287,7 @@ class Hello_World extends Widget_Base {
 		$this->add_control(
 			'grid_image_hide',
 			[
-				'label'   => '<i class="fa fa-minus-circle"></i> ' . __( 'Hide', 'elementor-hello-world' ),
+				'label'   => '<i class="fa fa-minus-circle"></i> ' . __( 'Hide', 'elementor-depoimentos' ),
 				'type'    => \Elementor\Controls_Manager::SWITCHER,
 				'default' => '',
 			]
@@ -297,7 +297,7 @@ class Hello_World extends Widget_Base {
 		$this->add_control(
 			'grid_image_height',
 			[
-				'label'     => '<i class="fa fa-arrows-h"></i> ' . __( 'Image height', 'elementor-hello-world' ),
+				'label'     => '<i class="fa fa-arrows-h"></i> ' . __( 'Image height', 'elementor-depoimentos' ),
 				'type'      => \Elementor\Controls_Manager::SLIDER,
 				'default'   => [
 					'size' => 220,
@@ -319,7 +319,7 @@ class Hello_World extends Widget_Base {
 		$this->add_control(
 			'grid_image_link',
 			[
-				'label'   => '<i class="fa fa-link"></i> ' . __( 'Link', 'elementor-hello-world' ),
+				'label'   => '<i class="fa fa-link"></i> ' . __( 'Link', 'elementor-depoimentos' ),
 				'type'    => \Elementor\Controls_Manager::SWITCHER,
 				'default' => 'yes',
 			]
@@ -335,7 +335,7 @@ class Hello_World extends Widget_Base {
 		$this->start_controls_section(
 			'section_grid_title',
 			[
-				'label' => __( 'Title', 'elementor-hello-world' ),
+				'label' => __( 'Title', 'elementor-depoimentos' ),
 			]
 		);
 
@@ -343,7 +343,7 @@ class Hello_World extends Widget_Base {
 		$this->add_control(
 			'grid_title_hide',
 			[
-				'label'   => '<i class="fa fa-minus-circle"></i> ' . __( 'Hide', 'elementor-hello-world' ),
+				'label'   => '<i class="fa fa-minus-circle"></i> ' . __( 'Hide', 'elementor-depoimentos' ),
 				'type'    => \Elementor\Controls_Manager::SWITCHER,
 				'default' => '',
 			]
@@ -354,7 +354,7 @@ class Hello_World extends Widget_Base {
 			'grid_title_tag',
 			[
 				'type'    => \Elementor\Controls_Manager::SELECT,
-				'label'   => '<i class="fa fa-code"></i> ' . __( 'Tag', 'elementor-hello-world' ),
+				'label'   => '<i class="fa fa-code"></i> ' . __( 'Tag', 'elementor-depoimentos' ),
 				'default' => 'h2',
 				'options' => [
 					'h1'   => 'H1',
@@ -374,7 +374,7 @@ class Hello_World extends Widget_Base {
 		$this->add_control(
 			'grid_title_link',
 			[
-				'label'   => '<i class="fa fa-link"></i> ' . __( 'Link', 'elementor-hello-world' ),
+				'label'   => '<i class="fa fa-link"></i> ' . __( 'Link', 'elementor-depoimentos' ),
 				'type'    => \Elementor\Controls_Manager::SWITCHER,
 				'default' => 'yes',
 			]
@@ -390,7 +390,7 @@ class Hello_World extends Widget_Base {
 		$this->start_controls_section(
 			'section_grid_meta',
 			[
-				'label' => __( 'Meta', 'elementor-hello-world' ),
+				'label' => __( 'Meta', 'elementor-depoimentos' ),
 			]
 		);
 
@@ -398,7 +398,7 @@ class Hello_World extends Widget_Base {
 		$this->add_control(
 			'grid_meta_hide',
 			[
-				'label'   => '<i class="fa fa-minus-circle"></i> ' . __( 'Hide', 'elementor-hello-world' ),
+				'label'   => '<i class="fa fa-minus-circle"></i> ' . __( 'Hide', 'elementor-depoimentos' ),
 				'type'    => \Elementor\Controls_Manager::SWITCHER,
 				'default' => '',
 			]
@@ -408,17 +408,17 @@ class Hello_World extends Widget_Base {
 		$this->add_control(
 			'grid_meta_display',
 			[
-				'label'       => '<i class="fa fa-info-circle"></i> ' . __( 'Display', 'elementor-hello-world' ),
+				'label'       => '<i class="fa fa-info-circle"></i> ' . __( 'Display', 'elementor-depoimentos' ),
 				'label_block' => true,
 				'type'        => \Elementor\Controls_Manager::SELECT2,
 				'default'     => [ 'author', 'date' ],
 				'multiple'    => true,
 				'options'     => [
-					'author'   => __( 'Author', 'elementor-hello-world' ),
-					'date'     => __( 'Date', 'elementor-hello-world' ),
-					'category' => __( 'Category', 'elementor-hello-world' ),
-					'tags'     => __( 'Tags', 'elementor-hello-world' ),
-					'comments' => __( 'Comments', 'elementor-hello-world' ),
+					'author'   => __( 'Author', 'elementor-depoimentos' ),
+					'date'     => __( 'Date', 'elementor-depoimentos' ),
+					'category' => __( 'Category', 'elementor-depoimentos' ),
+					'tags'     => __( 'Tags', 'elementor-depoimentos' ),
+					'comments' => __( 'Comments', 'elementor-depoimentos' ),
 				],
 			]
 		);
@@ -428,9 +428,9 @@ class Hello_World extends Widget_Base {
 			'grid_meta_categories_max',
 			[
 				'type'        => \Elementor\Controls_Manager::NUMBER,
-				'label'       => __( 'No. of Categories', 'elementor-hello-world' ),
-				'placeholder' => __( 'How many categories to display?', 'elementor-hello-world' ),
-				'default'     => __( '1', 'elementor-hello-world' ),
+				'label'       => __( 'No. of Categories', 'elementor-depoimentos' ),
+				'placeholder' => __( 'How many categories to display?', 'elementor-depoimentos' ),
+				'default'     => __( '1', 'elementor-depoimentos' ),
 				'condition'   => [
 					'grid_meta_display' => 'category',
 				],
@@ -442,8 +442,8 @@ class Hello_World extends Widget_Base {
 			'grid_meta_tags_max',
 			[
 				'type'        => \Elementor\Controls_Manager::NUMBER,
-				'label'       => __( 'No. of Tags', 'elementor-hello-world' ),
-				'placeholder' => __( 'How many tags to display?', 'elementor-hello-world' ),
+				'label'       => __( 'No. of Tags', 'elementor-depoimentos' ),
+				'placeholder' => __( 'How many tags to display?', 'elementor-depoimentos' ),
 				'condition'   => [
 					'grid_meta_display' => 'tags',
 				],
@@ -454,7 +454,7 @@ class Hello_World extends Widget_Base {
 		$this->add_control(
 			'grid_meta_remove_icons',
 			[
-				'label'   => '<i class="fa fa-minus-circle"></i> ' . __( 'Remove icons', 'elementor-hello-world' ),
+				'label'   => '<i class="fa fa-minus-circle"></i> ' . __( 'Remove icons', 'elementor-depoimentos' ),
 				'type'    => \Elementor\Controls_Manager::SWITCHER,
 				'default' => '',
 			]
@@ -470,7 +470,7 @@ class Hello_World extends Widget_Base {
 		$this->start_controls_section(
 			'section_grid_content',
 			[
-				'label' => __( 'Content', 'elementor-hello-world' ),
+				'label' => __( 'Content', 'elementor-depoimentos' ),
 			]
 		);
 
@@ -478,7 +478,7 @@ class Hello_World extends Widget_Base {
 		$this->add_control(
 			'grid_content_hide',
 			[
-				'label'   => '<i class="fa fa-minus-circle"></i> ' . __( 'Hide', 'elementor-hello-world' ),
+				'label'   => '<i class="fa fa-minus-circle"></i> ' . __( 'Hide', 'elementor-depoimentos' ),
 				'type'    => \Elementor\Controls_Manager::SWITCHER,
 				'default' => '',
 			]
@@ -488,7 +488,7 @@ class Hello_World extends Widget_Base {
 		$this->add_control(
 			'grid_content_full_post',
 			[
-				'label'   => __( 'Show full content', 'elementor-hello-world' ),
+				'label'   => __( 'Show full content', 'elementor-depoimentos' ),
 				'type'    => \Elementor\Controls_Manager::SWITCHER,
 				'default' => '',
 			]
@@ -499,8 +499,8 @@ class Hello_World extends Widget_Base {
 			'grid_content_length',
 			[
 				'type'        => \Elementor\Controls_Manager::NUMBER,
-				'label'       => '<i class="fa fa-arrows-h"></i> ' . __( 'Length (words)', 'elementor-hello-world' ),
-				'placeholder' => __( 'Length of content (words)', 'elementor-hello-world' ),
+				'label'       => '<i class="fa fa-arrows-h"></i> ' . __( 'Length (words)', 'elementor-depoimentos' ),
+				'placeholder' => __( 'Length of content (words)', 'elementor-depoimentos' ),
 				'default'     => 30,
 				'condition'   => [
 						'grid_content_full_post!' => 'yes'
@@ -512,7 +512,7 @@ class Hello_World extends Widget_Base {
 		$this->add_control(
 			'grid_content_price',
 			[
-				'label'     => '<i class="fa fa-usd"></i> ' . __( 'Price', 'elementor-hello-world' ),
+				'label'     => '<i class="fa fa-usd"></i> ' . __( 'Price', 'elementor-depoimentos' ),
 				'type'      => \Elementor\Controls_Manager::SWITCHER,
 				'default'   => 'yes',
 				'condition' => [
@@ -525,7 +525,7 @@ class Hello_World extends Widget_Base {
 		$this->add_control(
 			'grid_content_default_btn',
 			[
-				'label'     => '<i class="fa fa-check-square"></i> ' . __( 'Button', 'elementor-hello-world' ),
+				'label'     => '<i class="fa fa-check-square"></i> ' . __( 'Button', 'elementor-depoimentos' ),
 				'type'      => \Elementor\Controls_Manager::SWITCHER,
 				'default'   => 'yes',
 				'condition' => [
@@ -539,9 +539,9 @@ class Hello_World extends Widget_Base {
 			'grid_content_default_btn_text',
 			[
 				'type'        => \Elementor\Controls_Manager::TEXT,
-				'label'       => __( 'Button text', 'elementor-hello-world' ),
-				'placeholder' => __( 'Read more', 'elementor-hello-world' ),
-				'default'     => __( 'Read more', 'elementor-hello-world' ),
+				'label'       => __( 'Button text', 'elementor-depoimentos' ),
+				'placeholder' => __( 'Read more', 'elementor-depoimentos' ),
+				'default'     => __( 'Read more', 'elementor-depoimentos' ),
 				'condition'   => [
 					'grid_content_default_btn!'    => '',
 					'section_grid.grid_post_type!' => 'product',
@@ -553,7 +553,7 @@ class Hello_World extends Widget_Base {
 		$this->add_control(
 			'grid_content_product_btn',
 			[
-				'label'     => '<i class="fa fa-check-square"></i> ' . __( 'Button', 'elementor-hello-world' ),
+				'label'     => '<i class="fa fa-check-square"></i> ' . __( 'Button', 'elementor-depoimentos' ),
 				'type'      => \Elementor\Controls_Manager::SWITCHER,
 				'default'   => 'yes',
 				'condition' => [
@@ -566,23 +566,23 @@ class Hello_World extends Widget_Base {
 		$this->add_responsive_control(
 			'grid_content_btn_alignment',
 			[
-				'label'          => __( 'Button alignment', 'elementor-hello-world' ),
+				'label'          => __( 'Button alignment', 'elementor-depoimentos' ),
 				'type'           => \Elementor\Controls_Manager::CHOOSE,
 				'options'        => [
 					'left'    => [
-						'title' => __( 'Left', 'elementor-hello-world' ),
+						'title' => __( 'Left', 'elementor-depoimentos' ),
 						'icon'  => 'fa fa-align-left',
 					],
 					'center'  => [
-						'title' => __( 'Center', 'elementor-hello-world' ),
+						'title' => __( 'Center', 'elementor-depoimentos' ),
 						'icon'  => 'fa fa-align-center',
 					],
 					'right'   => [
-						'title' => __( 'Right', 'elementor-hello-world' ),
+						'title' => __( 'Right', 'elementor-depoimentos' ),
 						'icon'  => 'fa fa-align-right',
 					],
 					'justify' => [
-						'title' => __( 'Justified', 'elementor-hello-world' ),
+						'title' => __( 'Justified', 'elementor-depoimentos' ),
 						'icon'  => 'fa fa-align-justify',
 					],
 				],
@@ -602,19 +602,19 @@ class Hello_World extends Widget_Base {
 		$this->add_responsive_control(
 			'grid_content_alignment',
 			[
-				'label'          => '<i class="fa fa-align-right"></i> ' . __( 'Alignment', 'elementor-hello-world' ),
+				'label'          => '<i class="fa fa-align-right"></i> ' . __( 'Alignment', 'elementor-depoimentos' ),
 				'type'           => \Elementor\Controls_Manager::CHOOSE,
 				'options'        => [
 					'left'   => [
-						'title' => __( 'Left', 'elementor-hello-world' ),
+						'title' => __( 'Left', 'elementor-depoimentos' ),
 						'icon'  => 'fa fa-align-left',
 					],
 					'center' => [
-						'title' => __( 'Center', 'elementor-hello-world' ),
+						'title' => __( 'Center', 'elementor-depoimentos' ),
 						'icon'  => 'fa fa-align-center',
 					],
 					'right'  => [
-						'title' => __( 'Right', 'elementor-hello-world' ),
+						'title' => __( 'Right', 'elementor-depoimentos' ),
 						'icon'  => 'fa fa-align-right',
 					],
 				],
@@ -637,7 +637,7 @@ class Hello_World extends Widget_Base {
 		$this->start_controls_section(
 			'section_grid_pagination',
 			[
-				'label'     => __( 'Pagination', 'elementor-hello-world' ),
+				'label'     => __( 'Pagination', 'elementor-depoimentos' ),
 				'condition' => [
 					'section_grid.grid_pagination' => 'yes',
 				],
@@ -648,19 +648,19 @@ class Hello_World extends Widget_Base {
 		$this->add_responsive_control(
 			'grid_pagination_alignment',
 			[
-				'label'          => __( 'Alignment', 'elementor-hello-world' ),
+				'label'          => __( 'Alignment', 'elementor-depoimentos' ),
 				'type'           => \Elementor\Controls_Manager::CHOOSE,
 				'options'        => [
 					'left'   => [
-						'title' => __( 'Left', 'elementor-hello-world' ),
+						'title' => __( 'Left', 'elementor-depoimentos' ),
 						'icon'  => 'fa fa-align-left',
 					],
 					'center' => [
-						'title' => __( 'Center', 'elementor-hello-world' ),
+						'title' => __( 'Center', 'elementor-depoimentos' ),
 						'icon'  => 'fa fa-align-center',
 					],
 					'right'  => [
-						'title' => __( 'Right', 'elementor-hello-world' ),
+						'title' => __( 'Right', 'elementor-depoimentos' ),
 						'icon'  => 'fa fa-align-right',
 					],
 				],
@@ -684,7 +684,7 @@ class Hello_World extends Widget_Base {
 		$this->start_controls_section(
 			'section_grid_style',
 			[
-				'label' => __( 'Grid Options', 'elementor-hello-world' ),
+				'label' => __( 'Grid Options', 'elementor-depoimentos' ),
 				'tab'   => \Elementor\Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -693,7 +693,7 @@ class Hello_World extends Widget_Base {
 		$this->add_responsive_control(
 			'grid_style_columns_margin',
 			[
-				'label'     => __( 'Columns margin', 'elementor-hello-world' ),
+				'label'     => __( 'Columns margin', 'elementor-depoimentos' ),
 				'type'      => \Elementor\Controls_Manager::SLIDER,
 				'default'   => [
 					'size' => 15,
@@ -715,7 +715,7 @@ class Hello_World extends Widget_Base {
 		$this->add_responsive_control(
 			'grid_style_rows_margin',
 			[
-				'label'     => __( 'Rows margin', 'elementor-hello-world' ),
+				'label'     => __( 'Rows margin', 'elementor-depoimentos' ),
 				'type'      => \Elementor\Controls_Manager::SLIDER,
 				'default'   => [
 					'size' => 30,
@@ -727,7 +727,7 @@ class Hello_World extends Widget_Base {
 					],
 				],
 				'selectors' => [
-					'{{WRAPPER}} .obfx-grid-wrapper' => 'padding-bottom: {{SIZE}}{{UNIT}}; padding-top: {{SIZE}}{{UNIT}};',
+					'{{WRAPPER}} .obfx-grid-wrapper' => 'padding-bottom: {{SIZE}}{{UNIT}};',
 				],
 			]
 		);
@@ -746,7 +746,7 @@ class Hello_World extends Widget_Base {
 		$this->add_control(
 			'grid_items_style_heading',
 			[
-				'label'     => __( 'Items', 'elementor-hello-world' ),
+				'label'     => __( 'Items', 'elementor-depoimentos' ),
 				'type'      => \Elementor\Controls_Manager::HEADING,
 				'separator' => 'before',
 			]
@@ -756,7 +756,7 @@ class Hello_World extends Widget_Base {
 		$this->add_responsive_control(
 			'grid_items_style_padding',
 			[
-				'label'      => __( 'Padding', 'elementor-hello-world' ),
+				'label'      => __( 'Padding', 'elementor-depoimentos' ),
 				'type'       => \Elementor\Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%' ],
 				'selectors'  => [
@@ -769,7 +769,7 @@ class Hello_World extends Widget_Base {
 		$this->add_control(
 			'grid_items_style_border_radius',
 			[
-				'label'      => __( 'Border Radius', 'elementor-hello-world' ),
+				'label'      => __( 'Border Radius', 'elementor-depoimentos' ),
 				'type'       => \Elementor\Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%' ],
 				'selectors'  => [
@@ -809,7 +809,7 @@ class Hello_World extends Widget_Base {
 		$this->start_controls_section(
 			'section_grid_image_style',
 			[
-				'label'     => __( 'Image', 'elementor-hello-world' ),
+				'label'     => __( 'Image', 'elementor-depoimentos' ),
 				'tab'       => \Elementor\Controls_Manager::TAB_STYLE,
 				'condition' => [
 					'section_grid_image.grid_image_hide' => '',
@@ -821,7 +821,7 @@ class Hello_World extends Widget_Base {
 		$this->add_control(
 			'grid_image_style_border_radius',
 			[
-				'label'      => __( 'Border Radius', 'elementor-hello-world' ),
+				'label'      => __( 'Border Radius', 'elementor-depoimentos' ),
 				'type'       => \Elementor\Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%' ],
 				'selectors'  => [
@@ -850,7 +850,7 @@ class Hello_World extends Widget_Base {
 		$this->add_responsive_control(
 			'grid_image_style_margin',
 			[
-				'label'      => __( 'Margin', 'elementor-hello-world' ),
+				'label'      => __( 'Margin', 'elementor-depoimentos' ),
 				'type'       => \Elementor\Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px' ],
 				'selectors'  => [
@@ -873,7 +873,7 @@ class Hello_World extends Widget_Base {
 		$this->start_controls_section(
 			'section_grid_title_style',
 			[
-				'label'     => __( 'Title', 'elementor-hello-world' ),
+				'label'     => __( 'Title', 'elementor-depoimentos' ),
 				'tab'       => \Elementor\Controls_Manager::TAB_STYLE,
 				'condition' => [
 					'section_grid_title.grid_title_hide' => '',
@@ -896,7 +896,7 @@ class Hello_World extends Widget_Base {
 			'grid_title_style_color',
 			[
 				'type'      => \Elementor\Controls_Manager::COLOR,
-				'label'     => __( 'Color', 'elementor-hello-world' ),
+				'label'     => __( 'Color', 'elementor-depoimentos' ),
 				'scheme'    => [
 					'type'  => \Elementor\Scheme_Color::get_type(),
 					'value' => \Elementor\Scheme_Color::COLOR_1,
@@ -912,7 +912,7 @@ class Hello_World extends Widget_Base {
 		$this->add_responsive_control(
 			'grid_title_style_margin',
 			[
-				'label'      => __( 'Margin', 'elementor-hello-world' ),
+				'label'      => __( 'Margin', 'elementor-depoimentos' ),
 				'type'       => \Elementor\Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px' ],
 				'selectors'  => [
@@ -932,7 +932,7 @@ class Hello_World extends Widget_Base {
 		$this->start_controls_section(
 			'section_grid_meta_style',
 			[
-				'label'     => __( 'Meta', 'elementor-hello-world' ),
+				'label'     => __( 'Meta', 'elementor-depoimentos' ),
 				'tab'       => \Elementor\Controls_Manager::TAB_STYLE,
 				'condition' => [
 					'section_grid_meta.grid_meta_hide' => '',
@@ -955,7 +955,7 @@ class Hello_World extends Widget_Base {
 			'grid_meta_style_color',
 			[
 				'type'      => \Elementor\Controls_Manager::COLOR,
-				'label'     => __( 'Color', 'elementor-hello-world' ),
+				'label'     => __( 'Color', 'elementor-depoimentos' ),
 				'scheme'    => [
 					'type'  => \Elementor\Scheme_Color::get_type(),
 					'value' => \Elementor\Scheme_Color::COLOR_1,
@@ -972,7 +972,7 @@ class Hello_World extends Widget_Base {
 		$this->add_responsive_control(
 			'grid_meta_style_margin',
 			[
-				'label'      => __( 'Margin', 'elementor-hello-world' ),
+				'label'      => __( 'Margin', 'elementor-depoimentos' ),
 				'type'       => \Elementor\Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px' ],
 				'selectors'  => [
@@ -992,7 +992,7 @@ class Hello_World extends Widget_Base {
 		$this->start_controls_section(
 			'section_grid_content_style',
 			[
-				'label' => __( 'Content', 'elementor-hello-world' ),
+				'label' => __( 'Content', 'elementor-depoimentos' ),
 				'tab'   => \Elementor\Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -1015,7 +1015,7 @@ class Hello_World extends Widget_Base {
 			'grid_content_style_color',
 			[
 				'type'      => \Elementor\Controls_Manager::COLOR,
-				'label'     => __( 'Color', 'elementor-hello-world' ),
+				'label'     => __( 'Color', 'elementor-depoimentos' ),
 				'scheme'    => [
 					'type'  => \Elementor\Scheme_Color::get_type(),
 					'value' => \Elementor\Scheme_Color::COLOR_1,
@@ -1033,7 +1033,7 @@ class Hello_World extends Widget_Base {
 		$this->add_responsive_control(
 			'grid_content_style_margin',
 			[
-				'label'      => __( 'Margin', 'elementor-hello-world' ),
+				'label'      => __( 'Margin', 'elementor-depoimentos' ),
 				'type'       => \Elementor\Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px' ],
 				'selectors'  => [
@@ -1049,7 +1049,7 @@ class Hello_World extends Widget_Base {
 		$this->add_control(
 			'grid_content_price_style_heading',
 			[
-				'label'     => __( 'Price', 'elementor-hello-world' ),
+				'label'     => __( 'Price', 'elementor-depoimentos' ),
 				'type'      => \Elementor\Controls_Manager::HEADING,
 				'separator' => 'before',
 				'condition' => [
@@ -1078,7 +1078,7 @@ class Hello_World extends Widget_Base {
 			'grid_content_price_style_color',
 			[
 				'type'      => \Elementor\Controls_Manager::COLOR,
-				'label'     => __( 'Color', 'elementor-hello-world' ),
+				'label'     => __( 'Color', 'elementor-depoimentos' ),
 				'scheme'    => [
 					'type'  => \Elementor\Scheme_Color::get_type(),
 					'value' => \Elementor\Scheme_Color::COLOR_1,
@@ -1097,7 +1097,7 @@ class Hello_World extends Widget_Base {
 		$this->add_responsive_control(
 			'grid_content_price_style_margin',
 			[
-				'label'      => __( 'Margin', 'elementor-hello-world' ),
+				'label'      => __( 'Margin', 'elementor-depoimentos' ),
 				'type'       => \Elementor\Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px' ],
 				'selectors'  => [
@@ -1124,7 +1124,7 @@ class Hello_World extends Widget_Base {
 		$this->add_control(
 			'grid_button_style_heading',
 			[
-				'label'     => __( 'Button', 'elementor-hello-world' ),
+				'label'     => __( 'Button', 'elementor-depoimentos' ),
 				'type'      => \Elementor\Controls_Manager::HEADING,
 				'separator' => 'before',
 				'condition' => [
@@ -1154,7 +1154,7 @@ class Hello_World extends Widget_Base {
 		$this->start_controls_tab(
 			'grid_button_style_normal',
 			[
-				'label'     => __( 'Normal', 'elementor-hello-world' ),
+				'label'     => __( 'Normal', 'elementor-depoimentos' ),
 				'condition' => [
 					'section_grid_content.grid_content_default_btn!' => '',
 					'section_grid_content.grid_content_product_btn!' => '',
@@ -1167,7 +1167,7 @@ class Hello_World extends Widget_Base {
 			'grid_button_style_normal_text_color',
 			[
 				'type'      => \Elementor\Controls_Manager::COLOR,
-				'label'     => __( 'Text Color', 'elementor-hello-world' ),
+				'label'     => __( 'Text Color', 'elementor-depoimentos' ),
 				'scheme'    => [
 					'type'  => \Elementor\Scheme_Color::get_type(),
 					'value' => \Elementor\Scheme_Color::COLOR_1,
@@ -1188,7 +1188,7 @@ class Hello_World extends Widget_Base {
 			'grid_button_style_normal_bg_color',
 			[
 				'type'      => \Elementor\Controls_Manager::COLOR,
-				'label'     => __( 'Background Color', 'elementor-hello-world' ),
+				'label'     => __( 'Background Color', 'elementor-depoimentos' ),
 				'scheme'    => [
 					'type'  => \Elementor\Scheme_Color::get_type(),
 					'value' => \Elementor\Scheme_Color::COLOR_1,
@@ -1224,7 +1224,7 @@ class Hello_World extends Widget_Base {
 		$this->start_controls_tab(
 			'grid_button_style_hover',
 			[
-				'label'     => __( 'Hover', 'elementor-hello-world' ),
+				'label'     => __( 'Hover', 'elementor-depoimentos' ),
 				'condition' => [
 					'section_grid_content.grid_content_default_btn!' => '',
 					'section_grid_content.grid_content_product_btn!' => '',
@@ -1237,7 +1237,7 @@ class Hello_World extends Widget_Base {
 			'grid_button_style_hover_text_color',
 			[
 				'type'      => \Elementor\Controls_Manager::COLOR,
-				'label'     => __( 'Text Color', 'elementor-hello-world' ),
+				'label'     => __( 'Text Color', 'elementor-depoimentos' ),
 				'scheme'    => [
 					'type'  => \Elementor\Scheme_Color::get_type(),
 					'value' => \Elementor\Scheme_Color::COLOR_1,
@@ -1258,7 +1258,7 @@ class Hello_World extends Widget_Base {
 			'grid_button_style_hover_bg_color',
 			[
 				'type'      => \Elementor\Controls_Manager::COLOR,
-				'label'     => __( 'Background Color', 'elementor-hello-world' ),
+				'label'     => __( 'Background Color', 'elementor-depoimentos' ),
 				'scheme'    => [
 					'type'  => \Elementor\Scheme_Color::get_type(),
 					'value' => \Elementor\Scheme_Color::COLOR_1,
@@ -1296,7 +1296,7 @@ class Hello_World extends Widget_Base {
 		$this->add_control(
 			'grid_button_style_padding',
 			[
-				'label'      => __( 'Button padding', 'elementor-hello-world' ),
+				'label'      => __( 'Button padding', 'elementor-depoimentos' ),
 				'type'       => \Elementor\Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px' ],
 				'selectors'  => [
@@ -1313,7 +1313,7 @@ class Hello_World extends Widget_Base {
 		$this->add_control(
 			'grid_button_style_border_radius',
 			[
-				'label'      => __( 'Button border radius', 'elementor-hello-world' ),
+				'label'      => __( 'Button border radius', 'elementor-depoimentos' ),
 				'type'       => \Elementor\Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%' ],
 				'selectors'  => [
@@ -1335,7 +1335,7 @@ class Hello_World extends Widget_Base {
 		$this->start_controls_section(
 			'section_grid_pagination_style',
 			[
-				'label'     => __( 'Pagination', 'elementor-hello-world' ),
+				'label'     => __( 'Pagination', 'elementor-depoimentos' ),
 				'tab'       => \Elementor\Controls_Manager::TAB_STYLE,
 				'condition' => [
 					'section_grid.grid_pagination' => 'yes',
@@ -1347,7 +1347,7 @@ class Hello_World extends Widget_Base {
 		$this->add_responsive_control(
 			'grid_pagination_style_margin',
 			[
-				'label'      => __( 'Margin', 'elementor-hello-world' ),
+				'label'      => __( 'Margin', 'elementor-depoimentos' ),
 				'type'       => \Elementor\Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px' ],
 				'selectors'  => [
@@ -1368,15 +1368,10 @@ class Hello_World extends Widget_Base {
 		$this->maybe_load_widget_style();
 		// ensure the needed scripts
 
-		if ( ! empty( $settings['grid_pagination'] ) ) { 
-			$teste = 'true';
-		} else {
-			$teste = 'false';
-		}
 
 		// Output.
 		echo '<div class="obfx-grid">';
-		echo '<div data-flickity=\'{"freeScroll": true, "contain": true, "prevNextButtons": false, "pageDots": '.$teste.', "groupCells": "2" }\' class="main-carousel' . ( ! empty( $settings['grid_style'] ) && $settings['grid_style'] == 'list' ? ' obfx-grid-style-' . $settings['grid_style'] : '' ) . ( ! empty( $settings['grid_columns_mobile'] ) ? ' obfx-grid-mobile-' . $settings['grid_columns_mobile'] : '' ) . ( ! empty( $settings['grid_columns_tablet'] ) ? ' obfx-grid-tablet-' . $settings['grid_columns_tablet'] : '' ) . ( ! empty( $settings['grid_columns'] ) ? ' obfx-grid-desktop-' . $settings['grid_columns'] : '' ) . '">';
+		echo '<div class="obfx-grid-container' . ( ! empty( $settings['grid_style'] ) && $settings['grid_style'] == 'list' ? ' obfx-grid-style-' . $settings['grid_style'] : '' ) . ( ! empty( $settings['grid_columns_mobile'] ) ? ' obfx-grid-mobile-' . $settings['grid_columns_mobile'] : '' ) . ( ! empty( $settings['grid_columns_tablet'] ) ? ' obfx-grid-tablet-' . $settings['grid_columns_tablet'] : '' ) . ( ! empty( $settings['grid_columns'] ) ? ' obfx-grid-desktop-' . $settings['grid_columns'] : '' ) . '">';
 
 		// Arguments for query.
 		$args = array();
@@ -1436,11 +1431,7 @@ class Hello_World extends Widget_Base {
 			while ( $query->have_posts() ) {
 				$query->the_post();
 
-				echo '<div class="obfx-grid-wrapper ';
-				if ( ! empty( $settings['grid_pagination'] ) ) { 
-					echo 'carousel-cell';
-				}
-				echo '">';
+				echo '<div class="obfx-grid-wrapper">';
 				echo '<article class="obfx-grid-col' . ( $settings['grid_image_hide'] == 'yes' || ! has_post_thumbnail() ? ' obfx-no-image' : '' ) . '">';
 
 				// Image.
@@ -1472,7 +1463,31 @@ class Hello_World extends Widget_Base {
 
 			// Pagination.
 			if ( ! empty( $settings['grid_pagination'] ) ) { ?>
-				
+				<div class="obfx-grid-pagination">
+					<?php
+					$big           = 999999999;
+					$totalpages    = $query->max_num_pages;
+					$current       = max( 1, $paged );
+					$paginate_args = array(
+						'base'      => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
+						'format'    => '?paged=%#%',
+						'current'   => $current,
+						'total'     => $totalpages,
+						'show_all'  => false,
+						'end_size'  => 1,
+						'mid_size'  => 3,
+						'prev_next' => true,
+						'prev_text' => esc_html__( 'Previous', 'elementor-depoimentos' ),
+						'next_text' => esc_html__( 'Next', 'elementor-depoimentos' ),
+						'type'      => 'plain',
+						'add_args'  => false,
+					);
+
+					$pagination = paginate_links( $paginate_args ); ?>
+					<nav class="pagination">
+						<?php echo $pagination; ?>
+					</nav>
+				</div>
 				<?php
 			}
 		} // End if().
@@ -1575,7 +1590,6 @@ class Hello_World extends Widget_Base {
 								<span class="obfx-grid-date">
 									<?php
 									echo ( $settings['grid_meta_remove_icons'] == '' ) ? '<i class="fa fa-calendar"></i>' : '';
-									echo "Publicado ";
 									echo get_the_date(); ?>
 								</span>
 								<?php
@@ -1597,9 +1611,9 @@ class Hello_World extends Widget_Base {
 									echo ( $settings['grid_meta_remove_icons'] == '' ) ? '<i class="fa fa-comment"></i>' : '';
 
 									if ( $settings['grid_post_type'] == 'product' ) {
-										echo comments_number( __( 'No reviews', 'elementor-hello-world' ), __( '1 review', 'elementor-hello-world' ), __( '% reviews', 'elementor-hello-world' ) );
+										echo comments_number( __( 'No reviews', 'elementor-depoimentos' ), __( '1 review', 'elementor-depoimentos' ), __( '% reviews', 'elementor-depoimentos' ) );
 									} else {
-										echo comments_number( __( 'No comments', 'elementor-hello-world' ), __( '1 comment', 'elementor-hello-world' ), __( '% comments', 'elementor-hello-world' ) );
+										echo comments_number( __( 'No comments', 'elementor-depoimentos' ), __( '1 comment', 'elementor-depoimentos' ), __( '% comments', 'elementor-depoimentos' ) );
 									} ?>
 								</span>
 								<?php
