@@ -5486,8 +5486,15 @@ a.to-the-top > * {
 	top:248px;
 }
 
-#produtos .obfx-grid-wrapper  .obfx-grid-col:hover{
-	background:red!important;
+#produtos .obfx-grid-wrapper .obfx-grid-col:hover{
+	background: #FF0000;
+	background: -moz-linear-gradient(left, #FF0000 0%, #951E22 100%);
+	background: -webkit-linear-gradient(left, #FF0000 0%, #951E22 100%);
+	background: linear-gradient(to right, #FF0000 0%, #951E22 100%);
+}
+
+#produtos .obfx-grid-wrapper .obfx-grid-col:hover .obfx-grid-col-image img{
+	filter: invert(98%) sepia(83%) saturate(5094%) hue-rotate(211deg) brightness(134%) contrast(108%);
 }
 
 #produtos .obfx-grid-wrapper  .obfx-grid-col:hover .obfx-grid-title,
@@ -5553,7 +5560,7 @@ a.to-the-top > * {
 }
 
 .obfx-grid-desktop-4 .obfx-grid-wrapper {
-	width: 20%;
+	width: 364px;
 }
 
 .obfx-grid-desktop-5 .obfx-grid-wrapper {
@@ -5566,7 +5573,7 @@ a.to-the-top > * {
 	}
 
 	.obfx-grid-tablet-2 .obfx-grid-wrapper {
-		width: 50%;
+		width: 364px;
 	}
 
 	.obfx-grid-tablet-3 .obfx-grid-wrapper {
@@ -5584,7 +5591,7 @@ a.to-the-top > * {
 
 @media (max-width: 767px) {
 	.obfx-grid-mobile-1 .obfx-grid-wrapper {
-		width: 100%;
+		width: 334px;
 	}
 
 	.obfx-grid-mobile-2 .obfx-grid-wrapper {
@@ -5771,27 +5778,27 @@ a.to-the-top > * {
 	}
 
 	.banner img{
-		max-width:90%;
+		max-width:90%!important;
 	}
 
 	.banner h6{
-		margin-top: 160px;
-	    font-size: 18px;
+		margin-top: 160px!important;
+	    font-size: 18px!important;
 	    text-align: center;
 	}
 
 	.banner h1{
-		font-size: 28px;
-    	margin-top: 8px;
+		font-size: 28px!important;
+    	margin-top: 8px!important;
 	}
 
 	.banner p{
-		width: 100%;
-    text-align: center;
+		width: 100%!important;
+    	text-align: center!important;
 	}
 
 	.banner .btn-banner{
-		font-size: 15px;
+		font-size: 15px!important;
 	}
 }
 
@@ -5810,7 +5817,33 @@ html{
 }
 
 /* Media Queries 990 */
-@media (min-width:768px) and (max-width: 990px) {
+@media (min-width:768px) and (max-width: 992px) {
+	.elementor-10 .elementor-element.elementor-element-157379d > .elementor-widget-container{
+		paddin:27px!important;
+	}
+	
+	.banner img{
+		max-width:50%!important;
+	}
+
+	.banner h6{
+	    font-size: 18px!important;
+	}
+
+	.banner h1{
+	    font-size: 26px!important;
+	}
+
+	.banner p{
+		width: 50%!important;
+    	font-size: 16px!important;
+    	margin-bottom:20px;
+	}
+
+	.banner .btn-banner{
+		font-size: 17px!important;
+	}
+
 	.form-amostras-suno input{
 		width:33%;
 	}
@@ -5906,4 +5939,8 @@ html{
 	position: absolute;
     right: 20px;
     top: -30px;
+}
+
+.elementor-element-c18c3b1{
+	overflow-x:hidden;
 }
